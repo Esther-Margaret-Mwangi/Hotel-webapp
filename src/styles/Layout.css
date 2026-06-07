@@ -1,0 +1,99 @@
+.layout {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 14px;
+}
+
+.app-shell {
+  width: min(100%, 440px);
+  min-height: calc(100vh - 28px);
+  background: #ffffff;
+  border: 1px solid var(--fm-gray-100);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 14px 28px rgba(17, 17, 17, 0.15),
+    0 4px 12px rgba(17, 17, 17, 0.08);
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: 52px 1fr 52px;
+  align-items: center;
+  padding: 16px 16px 12px;
+  min-height: 76px;
+}
+
+.topbar-menu-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 0;
+  background: var(--fm-black);
+  color: var(--fm-white);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(17, 17, 17, 0.3);
+  z-index: 60;
+  justify-self: start;
+}
+
+.topbar-copy {
+  pointer-events: none;
+  text-align: center;
+}
+
+.topbar-logo {
+  justify-self: end;
+}
+
+.topbar-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid var(--fm-gray-100);
+  box-shadow: 0 2px 8px rgba(17, 17, 17, 0.15);
+  display: block;
+}
+
+.topbar-copy h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--fm-black);
+}
+
+.layout-main {
+  padding: 8px 14px 24px;
+}
+
+@media (min-width: 768px) {
+  .app-shell {
+    width: min(100%, 480px);
+  }
+}
+
+/* Activity detail page — no top padding, overflow scrolls */
+.app-shell--flush {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Search button (used on Dine and other pages) */
+.topbar-search-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--fm-gray-100);
+  background: var(--fm-white);
+  color: var(--fm-black);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(17, 17, 17, 0.1);
+}

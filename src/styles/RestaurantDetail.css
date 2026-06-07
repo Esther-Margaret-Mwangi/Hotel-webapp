@@ -1,0 +1,146 @@
+/* ── Shell ── */
+.rd-shell {
+  min-height: 100%;
+  background: var(--fm-white);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Hero ── */
+.rd-hero {
+  position: relative;
+  height: 340px;
+  flex-shrink: 0;
+}
+
+.rd-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* back button */
+.rd-back-btn {
+  position: absolute;
+  top: 44px;
+  left: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--fm-black);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(17, 17, 17, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+  transition: transform 0.15s;
+}
+
+.rd-back-btn:hover {
+  transform: scale(1.07);
+}
+
+/* centered label over hero */
+.rd-hero-label {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 22px;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.45);
+  backdrop-filter: blur(2px);
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--fm-white);
+  text-shadow: 0 1px 6px rgba(17, 17, 17, 0.5);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ── Content ── */
+.rd-content {
+  padding: 20px 16px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rd-name {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.16rem;
+  font-weight: 600;
+  color: var(--fm-black);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.rd-subtitle {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--fm-black);
+  line-height: 1.4;
+}
+
+.rd-subtitle-icon {
+  flex-shrink: 0;
+  font-size: 1rem;
+  margin-top: 1px;
+}
+
+.rd-desc {
+  font-size: 0.84rem;
+  color: var(--fm-gray-700);
+  line-height: 1.5;
+}
+
+/* ── Tags ── */
+.rd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.rd-tag {
+  padding: 9px 18px;
+  border: 1px solid var(--fm-gray-300);
+  border-radius: 6px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--fm-black);
+  background: transparent;
+}
+
+/* ── Not found ── */
+.rd-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 100%;
+  color: var(--fm-gray-500);
+}
+
+.rd-not-found button {
+  background: var(--fm-black);
+  color: var(--fm-white);
+  border: 0;
+  padding: 10px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
