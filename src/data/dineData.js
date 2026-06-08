@@ -49,7 +49,7 @@ const dineData = {
       name: "Swimming Pool Bar",
       subtitle: "POOL BAR Refreshments & Cocktails.",
       description:
-        "Relax by the pool, while your waiter serves you a refreshing cocktail crafted by the Zebar. Liqueurs, soft drinks, cocktails, tea and coffee.",
+        "Relax by the pool, while your waiter serves you a refreshing cocktail crafted by the Zebar. Liqueurs, soft drinks, cocktails, tea and coffee, as well as a snack menu.",
       tags: ["COCKTAILS", "CASUAL", "ALL DAY"],
       image: poolBarImage,
     },
