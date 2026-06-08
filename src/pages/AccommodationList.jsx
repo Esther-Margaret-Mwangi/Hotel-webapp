@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { ArrowLeft, Bed, Ruler, UserRound, Mountain } from "lucide-react";
+import { Bed, Ruler, UserRound, Mountain } from "lucide-react";
+import FlushHeader from "../components/FlushHeader";
 import SearchButton from "../components/SearchButton";
 import SearchEmpty from "../components/SearchEmpty";
 import SearchPanel from "../components/SearchPanel";
@@ -47,18 +48,11 @@ export default function AccommodationList() {
   const typeLabel = type.label.charAt(0) + type.label.slice(1).toLowerCase();
 
   return (
-    <div className="acl-page">
-      <header className="acl-header">
-        <button
-          className="acl-icon-btn"
-          onClick={() => navigate(-1)}
-          aria-label="Back"
-        >
-          <ArrowLeft size={18} />
-        </button>
-        <h1>{typeLabel}</h1>
-        <SearchButton className="acl-icon-btn" />
-      </header>
+    <div className="flush-page acl-page">
+      <FlushHeader
+        title={typeLabel}
+        right={<SearchButton className="flush-header-btn" />}
+      />
 
       <SearchPanel
         placeholder={`Search ${typeLabel.toLowerCase()}...`}

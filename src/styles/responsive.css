@@ -1,0 +1,119 @@
+.search-empty {
+  grid-column: 1 / -1;
+}
+
+/* ── Tablet ── */
+@media (min-width: 640px) {
+  .home-hero-card {
+    height: 340px;
+  }
+
+  .home-hero-copy h2 {
+    font-size: 22px;
+  }
+
+  .home-hero-copy p {
+    font-size: 14px;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+
+  .dine-list,
+  .events,
+  .all-activities-list,
+  .ac-page {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .acl-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .act-hero,
+  .ed-hero,
+  .rd-hero,
+  .acd-hero {
+    height: 400px;
+  }
+}
+
+/* ── Desktop ── */
+@media (min-width: 1024px) {
+  .layout {
+    background: var(--fm-white);
+  }
+
+  .app-shell,
+  .app-shell--flush {
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0 0 40px rgba(17, 17, 17, 0.06);
+  }
+
+  .flush-page,
+  .topbar,
+  .layout-search,
+  .layout-main {
+    max-width: 1100px;
+  }
+
+  .home-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dine-list,
+  .events,
+  .all-activities-list,
+  .ac-page {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .all-people-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .all-people-item:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  .topbar-copy h1,
+  .flush-header h1 {
+    font-size: 20px;
+  }
+
+  .act-content,
+  .ed-content,
+  .rd-content,
+  .acd-content {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* ── Small phones ── */
+@media (max-width: 380px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .all-activities-tab,
+  .dine-tab {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .acl-card {
+    grid-template-columns: 1fr;
+  }
+
+  .acl-card-image {
+    height: 160px;
+  }
+}

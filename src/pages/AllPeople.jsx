@@ -1,26 +1,36 @@
-import { ArrowLeft } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useMemo } from "react";
+import FlushHeader from "../components/FlushHeader";
+import SearchButton from "../components/SearchButton";
+import SearchEmpty from "../components/SearchEmpty";
+import SearchPanel from "../components/SearchPanel";
+import { useSearch } from "../context/SearchContext";
 import peopleData from "../data/peopleData";
+import { matchesSearch } from "../utils/search";
 import "../styles/AllPeople.css";
 
 export default function AllPeople() {
-  const navigate = useNavigate();
+  const { query } = useSearch();
+
+  const people = useMemo(
+    () => peopleData.filter((person) => matchesSearch(query, person.name)),
+    [query],
+  );
 
   return (
-    <div className="all-people-page">
-      <header className="all-people-header">
-        <button
-          className="all-people-back"
-          onClick={() => navigate(-1)}
-          aria-label="Back"
-        >
-          <ArrowLeft size={18} />
-        </button>
-        <h1>Key People</h1>
-      </header>
+    <div className="flush-page">
+      <FlushHeader
+        title="Key People"
+        right={<SearchButton className="flush-header-btn" />}
+      />
+
+      <SearchPanel
+        placeholder="Search people..."
+        wrapperClassName="flush-search"
+      />
 
       <section className="all-people-list">
-        {peopleData.map((person) => (
+        {people.length === 0 && <SearchEmpty />}
+        {people.map((person) => (
           <article key={person.id} className="all-people-item">
             <img src={person.image} alt={person.name} />
             <h2>{person.name}</h2>

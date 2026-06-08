@@ -1,0 +1,48 @@
+.flush-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 100%;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 18px var(--fm-page-padding) 28px;
+  background: var(--fm-white);
+}
+
+.flush-header {
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.flush-header h1 {
+  text-align: center;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--fm-black);
+}
+
+.flush-header-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--fm-gray-100);
+  background: var(--fm-white);
+  color: var(--fm-black);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(17, 17, 17, 0.1);
+  justify-self: start;
+}
+
+.flush-header-right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}

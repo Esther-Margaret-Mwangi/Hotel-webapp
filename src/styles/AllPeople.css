@@ -1,37 +1,3 @@
-.all-people-page {
-  min-height: 100%;
-  background: var(--fm-white);
-  padding: 18px var(--fm-page-padding) 28px;
-}
-
-.all-people-header {
-  display: grid;
-  grid-template-columns: 44px 1fr 44px;
-  align-items: center;
-  margin-bottom: 18px;
-}
-
-.all-people-back {
-  width: 38px;
-  height: 38px;
-  border-radius: 999px;
-  border: 1px solid rgba(17, 17, 17, 0.08);
-  background: var(--fm-white);
-  color: var(--fm-black);
-  display: grid;
-  place-items: center;
-  box-shadow: 0 6px 16px rgba(17, 17, 17, 0.12);
-  cursor: pointer;
-}
-
-.all-people-header h1 {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: var(--fm-black);
-}
-
 .all-people-list {
   background: var(--fm-white);
   border: 1px solid var(--fm-gray-100);

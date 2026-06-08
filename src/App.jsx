@@ -96,14 +96,11 @@ function App() {
         <Route
           path="/all-activities"
           element={
-            <Layout
-              pageTitle="All Activities"
-              searchable
-              searchPlaceholder="Search activities..."
-              headerRight={<SearchButton />}
-            >
-              <AllActivities />
-            </Layout>
+            <div className="layout">
+              <div className="app-shell app-shell--flush">
+                <AllActivities />
+              </div>
+            </div>
           }
         />
 
