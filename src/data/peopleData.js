@@ -1,19 +1,19 @@
 const peopleData = [
   {
     id: 1,
-    name: "Mary Muthoni",
+    name: "Janet Lanet",
     image:
       "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=240&q=80",
   },
   {
     id: 2,
-    name: "Max Fundi",
+    name: "Karimi Johnson",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=240&q=80",
   },
   {
     id: 3,
-    name: "Grace Muthoni",
+    name: "Gabriella Mbone",
     image:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=240&q=80",
   },
