@@ -5,6 +5,12 @@ import suitesImage from "../assets/images/suite1.jpg";
 import villasImage from "../assets/images/villa1.jpg";
 import bungalowsImage from "../assets/images/bungallow1.jpg";
 import accessibleImage from "../assets/images/acessible1.jpg";
+import suite2Image from "../assets/images/suite2.jpg";
+import suite3Image from "../assets/images/suite3.jpg";
+import suite4Image from "../assets/images/suite4.jpg";
+import suite5Image from "../assets/images/suite5.jpg";
+import suite6Image from "../assets/images/suite6.jpg";
+
 
 const accommodationTypes = [
   {
@@ -62,8 +68,8 @@ const accommodationUnits = {
       extra: "Mountain view",
       image: room2Image,
       description:
-        "Designed for comfort and flexibility, this twin-bed deluxe room offers classic Safari Club charm with generous space, en-suite bathroom, and scenic mountain outlooks.",
-      chips: ["UP TO 2 GUESTS", "TWIN BEDS", "MOUNTAIN VIEW", "FIREPLACE"],
+        "Perfect for traveling friends or colleagues, this room accommodates 2 adults and features two twin beds, a fireplace, garden views, and a warm, classic ambiance located within the main building. Includes a tea/coffee maker, wardrobe, and spacious bathroom.",
+      chips: ["UP TO 2 GUESTS", "IDYLLIC VIEWS", "DOUBLE BEDS", "SPACIOUS COMFORT"],
     },
     {
       id: "riverside-queen",
@@ -74,24 +80,84 @@ const accommodationUnits = {
       extra: "River side",
       image: room3Image,
       description:
-        "Set near tranquil waters, the Riverside Deluxe room blends warm interiors with expanded living space and relaxing views. Perfect for couples or small families.",
-      chips: ["UP TO 3 GUESTS", "QUEEN BED", "RIVERSIDE", "LARGE ROOM"],
+      "Tucked along the peaceful forest line and sounds of the river, the Riverside Deluxe Room with Queen Bed is a haven of comfort and nature. Thoughtfully appointed with a plush queen bed, a warm stone fireplace, and a private terrace with sweeping forest views, this room invites guests to fully unwind in a serene and scenic setting.",
+      chips: ["UP TO 3 GUESTS", "IDYLLIC VIEWS", "QUEEN BED", "IMMERSED IN NATURE", "SPACIOUS COMFORT"],
     },
   ],
   suites: [
     {
-      id: "junior-suite",
-      name: "Junior Suite",
+      id: "fairmont-suite",
+      name: "Fairmont Suite with King Bed",
       bed: "King size bed x 1",
-      size: "52 m2/560sqft",
+      size: "52 m2/559sqft",
       persons: "3 persons",
-      extra: "Garden view",
-      image:
-        "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=900&q=80",
+      extra: "Mountain view",
+      image: suitesImage,
       description:
-        "A spacious suite with separate sitting area, elegant decor and serene garden vistas. Ideal for longer stays and refined comfort.",
-      chips: ["UP TO 3 GUESTS", "KING BED", "SUITE LOUNGE", "GARDEN VIEW"],
+      "These refined suites sleep 3 adults or 2 adults and 1 child (with extra bed). Enjoy a fireplace, separate lounge, garden views, and elegant decor. Includes en-suite bathroom, sofa, tea/coffee facilities, and wardrobe—ideal for longer stays.",
+      chips: ["UP TO 3 PERSONS", "KING BED", "GARDEN VIEW", "SMART TV", "HIGH FLOOR"],
     },
+    {
+      id: "riverside-suite",
+      name: "Riverside Suite with King Bed",
+      bed: "King size bed x 1",
+      size: "41 m2/441sqft",
+      persons: "3 persons",
+      extra: "Forest view",
+      image: suite2Image,
+      description:
+      "These suites welcome 3 adults or 2 adults and 1 child, with a convertible sofa bed. Enjoy a fireplace, hot tub, terrace dining space, and forest views. Includes a lounge area, sofa, tea/coffee maker, and luxurious bath. Perfect for nature lovers.",
+      chips: ["UP TO 3 GUESTS", "KING BED", "IDYLLIC VIEWS", "IMMERSED IN NATURE", "SPACIOUS COMFORT"],
+    },
+    {
+      id: "riverside-twin-suite",
+      name: "Riverside Suite with Twin Bed",
+      bed: "Single bed x 2",
+      size: "41 m2/441sqft",
+      persons: "3 persons",
+      extra: "Forest view",
+      image: suite3Image,
+      description:
+      "A one Bedroom spacious Suite which features a traditional decor designed with elegance and comfort. Comfortable living area with sofa bed, a beautiful stone fire place and a private balcony with forest views.",
+      chips: ["UP TO 3 GUESTS", "DOUBLE BEDS", "IDYLLIC VIEWS", "IMMERSED IN NATURE", "SPACIOUS COMFORT"],
+    },
+    {
+      id: "garden-suite",
+      name: "Garden Suite with King Bed",
+      bed: "King size bed x 1",
+      size: "43 m2/462sqft",
+      persons: "3 persons",
+      extra: "Mountain view",
+      image: suite4Image,
+      description:
+      "Immerse yourself in lush tranquility with these suites designed for 3 adults or 2 adults and 1 child. With a fireplace, elegant bath, seating area, and extra bed options, it's perfect for couples or small families.",
+      chips: ["UP TO 3 GUESTS", "KING BED", "IDYLLIC VIEWS", "IMMERSED IN NATURE", "SPACIOUS COMFORT"],
+    },
+    {
+      id: "manor-junior-suite",
+      name: "Manor Junior Suite with King Bed",
+      bed: "Single bed x 2 & King size bed x 1",
+      size: "63 m2/677sqft",
+      persons: "2 persons",
+      extra: "Mountain view",
+      image: suite5Image,
+      description:
+      "Situated in the original historical block of the resort, the suite features an open concept design including a spacious lounge area flaunting luxurious furnishings, a wooden lit fire place, a plush bed and a private balcony overlooking the swimming pool, picturesque gardens and unrivalled view of the mountain. Its luxurious 5 piece en suite bathroom will leave you feeling pampered.",
+      chips: ["UP TO 2 GUESTS", "KING BED", "MOUNTAIN VIEW", "FIREPLACE", "HIGH FLOOR"],
+    },
+    {
+      id: "manor-equatorial-suite",
+      name: "Manor Equatorial Suite with King Bed",
+      bed: "King size bed x 1",
+      size: "60 m2/645sqft",
+      persons: "2 persons",
+      extra: "Mountain view",
+      image: suite6Image,
+      description:
+      "Located along the Equator, this spacious and contemporary suite features an elegant bedroom, a large living area, rich fabrics, individually styled furniture, fire place and a private balcony with mountain views.",
+      chips: ["UP TO 2 GUESTS", "KING BED", "IDYLLIC VIEWS", "IMMERSED IN NATURE", "SPACIOUS COMFORT"],
+    },
+    
   ],
   villas: [
     {
