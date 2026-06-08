@@ -71,6 +71,11 @@
   font-size: 13px;
   line-height: 1.4;
   text-shadow: 0 2px 8px rgba(17, 17, 17, 0.35);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 .home-section {
@@ -192,6 +197,11 @@
   color: var(--fm-gray-700);
   font-size: 12px;
   line-height: 1.36;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 @media (max-width: 360px) {

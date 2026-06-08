@@ -15,10 +15,16 @@ export default function Home() {
         </div>
         <div className="home-hero-gradient" />
         <div className="home-hero-copy">
-          <h2>The Forest Adventure Centre & Restaurant</h2>
+          <h2>Fairmont Mount Kenya Safari Club</h2>
           <p>
-            The Forest Adventure Centre is Nairobi&apos;s premier adventure
-            location nestled in the stunning Kerieta Forest.
+            At the foothills of majestic Mount Kenya, Fairmont Mount Kenya
+            Safari Club offers more than a stay it’s a soulful return to nature.
+            Within the Mount Kenya Wildlife Conservancy, witness firsthand the
+            rewilding of the critically endangered Mountain Bongo and visit the
+            on-site Wildlife Rescue Center. From horseback safaris to forest
+            trails, every moment invites you to reconnect, reflect, and help
+            leave a legacy of conservation wrapped in Fairmont’s iconic charm
+            and quiet luxury.
           </p>
         </div>
       </section>

@@ -89,22 +89,19 @@ const eventsData = [
     cardDescription:
       "At Fairmont, we offer outdoor spaces for up to 500 guests and an elegant ballroom for up to 240 guests.",
     heroLabel: "Social Events",
-    heading: "Exceptional service for every occasion",
+    heading: "Memorable Moments",
     description:
-      "From an elegant Nairobi ballroom dinner to exclusive parties, our culinary team excels at satisfying guests with classic cuisines and premium drinks. We cater to dietary restrictions, ensuring every guest enjoys a delightful dining experience.",
-    highlights: [
-      "8 venues",
-      "250 parking spaces",
-      "Maximum Capacity - 300 guests",
-    ],
+      "At Fairmont Mount Kenya Safari Club, every social event is a celebration surrounded by nature’s beauty. With stunning views of Mount Kenya, versatile venues, and impeccable service, we create unforgettable moments. Whether intimate gatherings or grand affairs, we ensure every detail shines.",
+    highlights: ["5 venues", "Free parking", "Capacity upto 500 guests"],
     exploreTitle: "",
     exploreDescription: "",
     venueCards: [],
     chips: [
-      "CENTRAL LOCATION",
+      "UNIQUE SPACES",
       "OUTDOOR SPACES",
       "CULINARY CREATIVITY",
-      "CUSTOMIZED MENUS",
+      "HIGH SPEED WIFI",
+      "NATURAL LIGHT",
     ],
     image: socialEventsImage,
   },
