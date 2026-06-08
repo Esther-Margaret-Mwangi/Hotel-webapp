@@ -12,6 +12,7 @@ import EventDetail from "./pages/EventDetail";
 import Placeholder from "./pages/Placeholder";
 import ActivityDetail from "./pages/ActivityDetail";
 import AllPeople from "./pages/AllPeople";
+import AllActivities from "./pages/AllActivities";
 import "./styles/App.css";
 
 const searchBtn = (
@@ -91,6 +92,16 @@ function App() {
             <div className="layout">
               <div className="app-shell app-shell--flush">
                 <AllPeople />
+              </div>
+            </div>
+          }
+        />
+        <Route
+          path="/all-activities"
+          element={
+            <div className="layout">
+              <div className="app-shell app-shell--flush">
+                <AllActivities />
               </div>
             </div>
           }

@@ -5,6 +5,8 @@ import experiences from "../data/experiences";
 import peopleData from "../data/peopleData";
 
 export default function Home() {
+  const featuredExperiences = experiences.slice(0, 4);
+
   return (
     <div className="home-mobile">
       <section className="home-hero-card">
@@ -50,10 +52,15 @@ export default function Home() {
       </section>
 
       <section className="home-section">
-        <h3 className="home-section-title">Things To Look Forward To</h3>
+        <div className="home-section-heading">
+          <h3 className="home-section-title">Things To Look Forward To</h3>
+          <Link to="/all-activities" className="home-section-link">
+            See more
+          </Link>
+        </div>
 
         <div className="home-grid">
-          {experiences.map((item) => (
+          {featuredExperiences.map((item) => (
             <article key={item.id} className="home-grid-card">
               <div
                 className="home-grid-image"
