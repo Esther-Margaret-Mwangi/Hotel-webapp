@@ -18,6 +18,14 @@
   flex-shrink: 0;
 }
 
+.flush-header--sticky {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--fm-white);
+  padding: 2px 0;
+}
+
 .flush-header h1 {
   text-align: center;
   font-family: "Fraunces", Georgia, serif;

@@ -62,12 +62,12 @@
 }
 
 .topbar-logo img {
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
+  width: 52px;
+  height: 38px;
+  border-radius: 8px;
   object-fit: cover;
-  border: 2px solid var(--fm-gray-100);
-  box-shadow: 0 2px 8px rgba(17, 17, 17, 0.15);
+  border: 0;
+  box-shadow: none;
   display: block;
 }
 

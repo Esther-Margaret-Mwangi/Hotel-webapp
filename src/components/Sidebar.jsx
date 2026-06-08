@@ -7,6 +7,7 @@ import {
   BedDouble,
   X,
 } from "lucide-react";
+import logoImage from "../assets/images/flogo1.jpeg";
 import "../styles/Sidebar.css";
 
 const navItems = [
@@ -24,7 +25,11 @@ export default function Sidebar({ isOpen, onClose }) {
       <aside className={`sidebar ${isOpen ? "sidebar--open" : ""}`}>
         <div className="sidebar-header">
           <div className="sidebar-brand">
-            <span className="sidebar-brand-name">Fairmont</span>
+            <img
+              src={logoImage}
+              alt="Fairmont logo"
+              className="sidebar-brand-logo"
+            />
           </div>
           <button
             className="sidebar-close"

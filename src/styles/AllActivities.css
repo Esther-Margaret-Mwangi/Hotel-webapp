@@ -1,3 +1,21 @@
+.all-activities-page {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  gap: 14px;
+}
+
+.all-activities-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 10px;
+}
+
 .all-activities {
   display: flex;
   flex-direction: column;

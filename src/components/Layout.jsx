@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import SearchPanel from "./SearchPanel";
 import Sidebar from "./Sidebar";
+import logoImage from "../assets/images/flogo1.jpeg";
 import "../styles/Layout.css";
 
 export default function Layout({
@@ -34,12 +35,7 @@ export default function Layout({
           </div>
 
           <div className="topbar-logo">
-            {headerRight ?? (
-              <img
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=120&q=80"
-                alt="Fairmont logo"
-              />
-            )}
+            {headerRight ?? <img src={logoImage} alt="Fairmont logo" />}
           </div>
         </header>
 

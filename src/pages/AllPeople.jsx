@@ -17,26 +17,28 @@ export default function AllPeople() {
   );
 
   return (
-    <div className="flush-page">
+    <div className="flush-page all-people-page">
       <FlushHeader
         title="Key People"
         right={<SearchButton className="flush-header-btn" />}
       />
 
-      <SearchPanel
-        placeholder="Search people..."
-        wrapperClassName="flush-search"
-      />
+      <div className="all-people-scroll">
+        <SearchPanel
+          placeholder="Search people..."
+          wrapperClassName="flush-search"
+        />
 
-      <section className="all-people-list">
-        {people.length === 0 && <SearchEmpty />}
-        {people.map((person) => (
-          <article key={person.id} className="all-people-item">
-            <img src={person.image} alt={person.name} />
-            <h2>{person.name}</h2>
-          </article>
-        ))}
-      </section>
+        <section className="all-people-list">
+          {people.length === 0 && <SearchEmpty />}
+          {people.map((person) => (
+            <article key={person.id} className="all-people-item">
+              <img src={person.image} alt={person.name} />
+              <h2>{person.name}</h2>
+            </article>
+          ))}
+        </section>
+      </div>
     </div>
   );
 }
