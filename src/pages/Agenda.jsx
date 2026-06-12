@@ -68,31 +68,33 @@ export default function Agenda() {
       }
     >
       <div className="agenda-page">
-        <div className="agenda-dates" aria-label="Event date">
-          <button
-            type="button"
-            className="agenda-date agenda-date--active"
-            aria-pressed="true"
-          >
-            <span className="agenda-date-day">{eventDate.day}</span>
-            <span className="agenda-date-label">{eventDate.weekday}</span>
-          </button>
-        </div>
-
-        <section className="agenda-summary">
-          <div className="agenda-summary-top">
-            <p className="agenda-summary-date">
-              <Calendar size={15} />
-              <span>{eventDate.label}</span>
-            </p>
-            <button type="button" className="agenda-filter-btn">
-              Everyone
+        <div className="agenda-sticky">
+          <div className="agenda-dates" aria-label="Event date">
+            <button
+              type="button"
+              className="agenda-date agenda-date--active"
+              aria-pressed="true"
+            >
+              <span className="agenda-date-day">{eventDate.day}</span>
+              <span className="agenda-date-label">{eventDate.weekday}</span>
             </button>
           </div>
-          <p className="agenda-summary-count">
-            {sessions.length} sessions scheduled
-          </p>
-        </section>
+
+          <section className="agenda-summary">
+            <div className="agenda-summary-top">
+              <p className="agenda-summary-date">
+                <Calendar size={15} />
+                <span>{eventDate.label}</span>
+              </p>
+              <button type="button" className="agenda-filter-btn">
+                Everyone
+              </button>
+            </div>
+            <p className="agenda-summary-count">
+              {sessions.length} sessions scheduled
+            </p>
+          </section>
+        </div>
 
         <div className="agenda-list">
           {sessions.length === 0 && <SearchEmpty />}

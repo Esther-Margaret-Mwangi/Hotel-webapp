@@ -5,6 +5,14 @@
 }
 
 /* ── Tabs ── */
+.dine-tabs-bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--fm-white);
+  padding-bottom: 4px;
+}
+
 .dine-tabs {
   display: flex;
   gap: 8px;

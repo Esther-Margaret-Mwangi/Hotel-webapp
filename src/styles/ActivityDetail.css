@@ -21,6 +21,14 @@
   display: block;
 }
 
+/* sticky overlay — keeps FABs & title fixed while hero/content scroll */
+.act-controls {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 0;
+}
+
 /* floating action buttons */
 .act-fab {
   position: absolute;
@@ -159,10 +167,12 @@
 }
 
 .act-name {
+  font-family: "Fraunces", Georgia, serif;
   font-size: 18px;
-  font-weight: 700;
-  color: var(--fm-accent);
+  font-weight: 600;
+  color: var(--fm-black);
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .act-rating {

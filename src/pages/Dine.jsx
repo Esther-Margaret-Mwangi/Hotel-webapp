@@ -28,19 +28,21 @@ export default function Dine() {
   return (
     <div className="dine">
       {/* ── Tabs ── */}
-      <div className="dine-tabs">
-        <button
-          className={`dine-tab ${activeTab === "restaurants" ? "dine-tab--active" : ""}`}
-          onClick={() => setActiveTab("restaurants")}
-        >
-          🍽 Restaurants
-        </button>
-        <button
-          className={`dine-tab ${activeTab === "bars" ? "dine-tab--active" : ""}`}
-          onClick={() => setActiveTab("bars")}
-        >
-          🍷 Bars
-        </button>
+      <div className="dine-tabs-bar">
+        <div className="dine-tabs">
+          <button
+            className={`dine-tab ${activeTab === "restaurants" ? "dine-tab--active" : ""}`}
+            onClick={() => setActiveTab("restaurants")}
+          >
+            🍽 Restaurants
+          </button>
+          <button
+            className={`dine-tab ${activeTab === "bars" ? "dine-tab--active" : ""}`}
+            onClick={() => setActiveTab("bars")}
+          >
+            🍷 Bars
+          </button>
+        </div>
       </div>
 
       {/* ── Card list ── */}
