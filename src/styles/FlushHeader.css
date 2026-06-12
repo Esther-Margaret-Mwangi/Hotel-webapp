@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 18px var(--fm-page-padding) 28px;
+  padding: calc(var(--fm-safe-top) + 18px) var(--fm-page-padding) 28px;
   background: var(--fm-white);
 }
 
@@ -16,6 +16,14 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+}
+
+.flush-header--sticky {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--fm-white);
+  padding: 2px 0;
 }
 
 .flush-header h1 {

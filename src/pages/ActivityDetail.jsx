@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, Heart, Image } from "lucide-react";
 import activities from "../data/activitiesData";
+import useHeroStatusTone from "../utils/useHeroStatusTone";
 import "../styles/ActivityDetail.css";
 
 export default function ActivityDetail() {
@@ -10,6 +11,7 @@ export default function ActivityDetail() {
   const [liked, setLiked] = useState(false);
 
   const activity = activities.find((item) => item.id === id);
+  const heroTone = useHeroStatusTone(activity?.hero);
 
   if (!activity) {
     return (
@@ -21,16 +23,9 @@ export default function ActivityDetail() {
   }
 
   return (
-    <div className="act-shell">
-      {/* ── Hero ── */}
-      <div className="act-hero">
-        <img
-          src={activity.hero}
-          alt={activity.title}
-          className="act-hero-img"
-        />
-
-        {/* floating controls */}
+    <div className="act-shell" data-status-tone={heroTone}>
+      {/* ── Sticky controls ── */}
+      <div className="act-controls">
         <button
           className="act-fab act-fab--back"
           onClick={() => navigate(-1)}
@@ -50,9 +45,18 @@ export default function ActivityDetail() {
         </button>
       </div>
 
+      {/* ── Hero ── */}
+      <div className="act-hero">
+        <img
+          src={activity.hero}
+          alt={activity.title}
+          className="act-hero-img"
+        />
+      </div>
+
       {/* ── Content ── */}
       <div className="act-content">
-        <h2 className="act-name">{activity.title}</h2>
+        <h2 className="act-name">{activity.title.toUpperCase()}</h2>
 
         <p className="act-desc">{activity.description}</p>
 

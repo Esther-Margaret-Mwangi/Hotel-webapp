@@ -33,7 +33,7 @@ export default function Home() {
 
       <section className="home-section">
         <div className="home-section-heading">
-          <h3 className="home-section-title">Key People</h3>
+          <h3 className="home-section-title">Sales Team</h3>
           <Link to="/all-people" className="home-section-link">
             See more
           </Link>
@@ -41,12 +41,16 @@ export default function Home() {
 
         <div className="facilitator-list">
           {peopleData.slice(0, 3).map((person) => (
-            <article key={person.id} className="facilitator-item">
+            <Link
+              key={person.id}
+              to={`/profile/${person.id}`}
+              className="facilitator-item"
+            >
               <img src={person.image} alt={person.name} />
               <div>
                 <h4>{person.name}</h4>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 20px 18px;
+  padding: calc(var(--fm-safe-top) + 26px) 20px 18px;
   border-bottom: 1px solid var(--fm-gray-100);
 }
 
@@ -42,11 +42,12 @@
   gap: 10px;
 }
 
-.sidebar-brand-name {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--fm-black);
+.sidebar-brand-logo {
+  width: 150px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
 }
 
 .sidebar-close {
@@ -105,4 +106,17 @@
 
 .sidebar-link-icon {
   flex-shrink: 0;
+}
+
+/* ── Footer ── */
+.sidebar-footer {
+  padding: 14px 20px;
+  border-top: 1px solid var(--fm-gray-100);
+  text-align: center;
+}
+
+.sidebar-footer p {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fm-gray-500);
 }

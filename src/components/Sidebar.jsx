@@ -5,8 +5,10 @@ import {
   UtensilsCrossed,
   PartyPopper,
   BedDouble,
+  Info,
   X,
 } from "lucide-react";
+import logoImage from "../assets/images/flogo1.jpeg";
 import "../styles/Sidebar.css";
 
 const navItems = [
@@ -15,6 +17,7 @@ const navItems = [
   { label: "Dine", path: "/dine", icon: UtensilsCrossed },
   { label: "Events", path: "/events", icon: PartyPopper },
   { label: "Accommodation", path: "/accommodation", icon: BedDouble },
+  { label: "About App", path: "/about", icon: Info },
 ];
 
 export default function Sidebar({ isOpen, onClose }) {
@@ -24,7 +27,11 @@ export default function Sidebar({ isOpen, onClose }) {
       <aside className={`sidebar ${isOpen ? "sidebar--open" : ""}`}>
         <div className="sidebar-header">
           <div className="sidebar-brand">
-            <span className="sidebar-brand-name">Fairmont</span>
+            <img
+              src={logoImage}
+              alt="Fairmont logo"
+              className="sidebar-brand-logo"
+            />
           </div>
           <button
             className="sidebar-close"
@@ -51,6 +58,10 @@ export default function Sidebar({ isOpen, onClose }) {
             </NavLink>
           ))}
         </nav>
+
+        <div className="sidebar-footer">
+          <p>Powered by Stawi Experiences</p>
+        </div>
       </aside>
     </>
   );

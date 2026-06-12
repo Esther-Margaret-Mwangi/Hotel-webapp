@@ -15,6 +15,8 @@ import Agenda from "./pages/Agenda";
 import ActivityDetail from "./pages/ActivityDetail";
 import AllPeople from "./pages/AllPeople";
 import AllActivities from "./pages/AllActivities";
+import About from "./pages/About";
+import Profile from "./pages/Profile";
 import "./styles/App.css";
 
 function App() {
@@ -94,11 +96,31 @@ function App() {
           }
         />
         <Route
+          path="/profile/:id"
+          element={
+            <div className="layout">
+              <div className="app-shell app-shell--flush">
+                <Profile />
+              </div>
+            </div>
+          }
+        />
+        <Route
           path="/all-activities"
           element={
             <div className="layout">
               <div className="app-shell app-shell--flush">
                 <AllActivities />
+              </div>
+            </div>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <div className="layout">
+              <div className="app-shell app-shell--flush">
+                <About />
               </div>
             </div>
           }
@@ -113,19 +135,7 @@ function App() {
             </Layout>
           }
         />
-        <Route
-          path="/dine"
-          element={
-            <Layout
-              pageTitle="Dine"
-              searchable
-              searchPlaceholder="Search restaurants and bars..."
-              headerRight={<SearchButton />}
-            >
-              <Dine />
-            </Layout>
-          }
-        />
+        <Route path="/dine" element={<Dine />} />
         <Route path="/agenda" element={<Agenda />} />
         <Route
           path="/events"
