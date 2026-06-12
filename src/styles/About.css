@@ -9,6 +9,10 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+  position: sticky;
+  top: calc(var(--fm-safe-top) + 18px);
+  z-index: 10;
+  background: var(--fm-white);
 }
 
 .about-menu-btn {

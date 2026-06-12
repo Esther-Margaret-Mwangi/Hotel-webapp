@@ -7,7 +7,12 @@
       "Bash(pkill -f \"vite --port 5179\")",
       "Bash(curl -s http://localhost:5180/src/pages/Profile.jsx -o /dev/null -w \"Profile.jsx: %{http_code}\\\\n\")",
       "Bash(curl -s http://localhost:5180/profile/1 -o /dev/null -w \"/profile/1: %{http_code}\\\\n\")",
-      "Bash(pkill -f \"vite --port 5180\")"
+      "Bash(pkill -f \"vite --port 5180\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5183/src/pages/RestaurantDetail.jsx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5183/src/pages/EventDetail.jsx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5183/src/pages/AccommodationDetail.jsx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5183/src/styles/About.css)",
+      "Bash(pkill -f \"vite --port 5183\")"
     ]
   }
 }

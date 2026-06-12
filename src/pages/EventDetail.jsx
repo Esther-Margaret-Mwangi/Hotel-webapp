@@ -22,9 +22,7 @@ export default function EventDetail() {
 
   return (
     <div className="ed-shell" data-status-tone={heroTone}>
-      <div className="ed-hero">
-        <img src={event.image} alt={event.title} className="ed-hero-img" />
-
+      <div className="ed-controls">
         <button
           className="ed-back-btn"
           onClick={() => navigate(-1)}
@@ -36,8 +34,12 @@ export default function EventDetail() {
         <span className="ed-hero-pill">{event.heroLabel}</span>
       </div>
 
+      <div className="ed-hero">
+        <img src={event.image} alt={event.title} className="ed-hero-img" />
+      </div>
+
       <div className="ed-content">
-        <h1 className="ed-title">{event.heading}</h1>
+        <h1 className="ed-title">{event.heading.toUpperCase()}</h1>
 
         <p className="ed-desc">{event.description}</p>
 

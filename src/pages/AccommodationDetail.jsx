@@ -24,8 +24,7 @@ export default function AccommodationDetail() {
 
   return (
     <div className="acd-shell" data-status-tone={heroTone}>
-      <div className="acd-hero">
-        <img src={unit.image} alt={unit.name} className="acd-hero-img" />
+      <div className="acd-controls">
         <button
           className="acd-back-btn"
           onClick={() => navigate(-1)}
@@ -34,6 +33,10 @@ export default function AccommodationDetail() {
           <ArrowLeft size={18} />
         </button>
         <span className="acd-hero-pill">Room</span>
+      </div>
+
+      <div className="acd-hero">
+        <img src={unit.image} alt={unit.name} className="acd-hero-img" />
       </div>
 
       <div className="acd-content">

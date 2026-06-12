@@ -19,6 +19,14 @@
   display: block;
 }
 
+/* sticky overlay — keeps back button & pill fixed while hero/content scroll */
+.acd-controls {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 0;
+}
+
 .acd-back-btn {
   position: absolute;
   top: calc(var(--fm-safe-top) + 12px);
@@ -86,10 +94,12 @@
 }
 
 .acd-content h1 {
+  font-family: "Fraunces", Georgia, serif;
   font-size: 18px;
-  line-height: 1.25;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--fm-black);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .acd-desc {

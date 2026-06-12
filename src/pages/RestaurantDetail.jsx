@@ -27,10 +27,8 @@ export default function RestaurantDetail() {
 
   return (
     <div className="rd-shell" data-status-tone={heroTone}>
-      {/* ── Hero ── */}
-      <div className="rd-hero">
-        <img src={venue.image} alt={venue.name} className="rd-hero-img" />
-
+      {/* ── Sticky controls ── */}
+      <div className="rd-controls">
         <button
           className="rd-back-btn"
           onClick={() => navigate(-1)}
@@ -42,6 +40,11 @@ export default function RestaurantDetail() {
         <span className="rd-hero-label">
           {isBarPage ? "Bar" : "Restaurant"}
         </span>
+      </div>
+
+      {/* ── Hero ── */}
+      <div className="rd-hero">
+        <img src={venue.image} alt={venue.name} className="rd-hero-img" />
       </div>
 
       {/* ── Content ── */}

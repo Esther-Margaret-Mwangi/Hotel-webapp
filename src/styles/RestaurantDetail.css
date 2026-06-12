@@ -21,6 +21,14 @@
   display: block;
 }
 
+/* sticky overlay — keeps back button & pill fixed while hero/content scroll */
+.rd-controls {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 0;
+}
+
 /* back button */
 .rd-back-btn {
   position: absolute;
