@@ -13,7 +13,10 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5183/src/pages/AccommodationDetail.jsx)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5183/src/styles/About.css)",
       "Bash(pkill -f \"vite --port 5183\")",
-      "Bash(pkill -f \"vite --port 5184\")"
+      "Bash(pkill -f \"vite --port 5184\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5186/src/pages/AllActivities.jsx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5186/src/styles/AllActivities.css)",
+      "Bash(pkill -f \"vite --port 5186\")"
     ]
   }
 }

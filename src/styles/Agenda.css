@@ -37,7 +37,8 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding-bottom: 8px;
+  margin: -12px calc(-1 * var(--fm-page-padding)) 0;
+  padding: 12px var(--fm-page-padding) 8px;
 }
 
 .agenda-dates {
@@ -48,8 +49,8 @@
 
 .agenda-date {
   flex: 0 0 auto;
-  width: 58px;
-  height: 58px;
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
   border: 2px solid var(--fm-gray-100);
   background: var(--fm-white);
@@ -58,19 +59,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: 1px;
   cursor: default;
 }
 
 .agenda-date-day {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1;
   color: var(--fm-black);
 }
 
 .agenda-date-label {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.02em;
